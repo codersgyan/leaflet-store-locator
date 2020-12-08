@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Nunito Sans', sans-serif;
+}
+main {
+    display: flex;
+}
+.store-list {
+    width: 25%;
+    height: 100vh;
+    overflow: auto;
+    background: whitesmoke;
+}
+#map {
+    height: 100vh;
+    width: 75%;
+}
+.store-list .heading {
+    background: #ff6900;
+    color: #fff;
+}
+.store-list .heading h2 {
+    padding: 1rem;
+}
+::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+    border-left: 0;
+    background: rgba(0, 0, 0, 0.1);
+}
+::-webkit-scrollbar-thumb {
+    background: #ff6900;
+    border-radius: 0;
+}
+.store-list ul.list {
+    padding: 0 1rem;
+    list-style-type: none;
+}
+.store-list .shop-item {
+    margin: 1rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 1rem;
+}
+.store-list li:last-child .shop-item {
+    border: none;
+}
+.store-list .shop-item a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #ff6900;
+    font-weight: 700;
+}
+.store-list .shop-item p {
+    font-size: 14px;
+    color: #404040;
+}
+.leaflet-popup-content-wrapper {
+    padding: 0;
+    overflow: hidden;
+}
+.leaflet-popup-content-wrapper .leaflet-popup-content {
+    margin: 0;
+}
+.leaflet-popup-content-wrapper h4 {
+    padding: 16px;
+    background: #ff6804;
+    color: #fff;
+    font-size: 16px;
+}
+.leaflet-popup-content-wrapper p {
+    padding: 0 16px;
+    font-size: 14px;
+    margin-bottom: 14px;
+}
+.leaflet-popup-content-wrapper .leaflet-popup-content .phone-number {
+    padding: 16px;
+    padding-top: 0;
+}
+.leaflet-popup-content-wrapper .leaflet-popup-content .phone-number a {
+    color: #ff6808;
+    font-size: 14px;
+}
